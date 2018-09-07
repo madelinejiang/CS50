@@ -22,7 +22,7 @@ int frequency(string note)
 {
     char AG=note[0];
     double octave=0;
-    double n=0, na=0;
+    double n=0, na=0; //na is the semitone change dependent on #/b
     double freq=0.0;
 
 

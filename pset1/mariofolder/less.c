@@ -33,8 +33,8 @@ int main(void)
 
         }
 
-    space=space-1;
-    hashtag=hashtag+1;
+    space--;
+    hashtag++;
 
     printf("\n");
 

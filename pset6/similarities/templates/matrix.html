@@ -1,0 +1,36 @@
+<!-- TODO -- create an html table-->
+<table class="table table-striped table-hover">
+		<tbody>
+		<tr>
+			<th></th>
+			<th></th>
+			<th></th>
+			{% for i in range(s2|length) %}
+			<th>{{s2[i]}}</th>
+			{% endfor %}
+		</tr>
+		<tr>
+			<th></th>
+			<th></th>
+			{% for i in range(1+(s2|length)) %}
+			<th>{{i}}</th>
+			{% endfor %}
+		</tr>
+		<tr>
+			<th></th>
+			<th>0</th>
+			{% for i in range(1+(s2|length))%}
+			<td>{{matrix[0][i][0]}}</td>
+			{% endfor %}
+		</tr>
+		{% for i in range(s1|length) %}
+		<tr>
+			<th>{{s1[i]}}</th>
+			<th>{{i+1}}</th>
+			{% for j in range(1+(s2|length))%}
+			<td>{{matrix[i+1][j][0]}}</td>
+			{% endfor %}
+		</tr>
+		{% endfor %}
+	</tbody>
+</table>

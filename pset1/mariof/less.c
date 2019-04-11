@@ -16,7 +16,7 @@ int main(void)
     while (height>23||height<=0);
 
  space=height-1;
- hashtag=2;
+ hashtag=1;
 
  for ( int h=0; h< height; h++)//for h times
  {
